@@ -11,15 +11,15 @@ enum {
 SDL_Window    * gWindow   = NULL;
 SDL_Renderer  * gRenderer = NULL;
 
-const int HALF_WIDTH = SCREEN_WIDTH / 2;
-const int QUARTER_WIDTH = SCREEN_WIDTH / 4;
-const int HALF_HEIGHT = SCREEN_HEIGHT / 2;
-const int QUARTER_HEIGHT = SCREEN_HEIGHT / 4;
+const int H_WIDTH = SCREEN_WIDTH / 2;
+const int Q_WIDTH = SCREEN_WIDTH / 4;
+const int H_HEIGHT = SCREEN_HEIGHT / 2;
+const int Q_HEIGHT = SCREEN_HEIGHT / 4;
 
 const std::vector<SDL_Vertex> verts = {
-  { SDL_FPoint{ HALF_WIDTH-QUARTER_WIDTH, HALF_HEIGHT+QUARTER_HEIGHT }, SDL_Color{ 255,   0,   0, 255}, SDL_FPoint{0}, },
-  { SDL_FPoint{ HALF_WIDTH+QUARTER_WIDTH, HALF_HEIGHT+QUARTER_HEIGHT }, SDL_Color{   0, 255,   0, 255}, SDL_FPoint{0}, },
-  { SDL_FPoint{               HALF_WIDTH, HALF_HEIGHT-QUARTER_HEIGHT }, SDL_Color{   0,   0, 255, 255}, SDL_FPoint{0}, },
+  { SDL_FPoint{ H_WIDTH-Q_WIDTH, H_HEIGHT+Q_HEIGHT }, SDL_Color{ 255,   0,   0, 255}, SDL_FPoint{0}, },
+  { SDL_FPoint{ H_WIDTH+Q_WIDTH, H_HEIGHT+Q_HEIGHT }, SDL_Color{   0, 255,   0, 255}, SDL_FPoint{0}, },
+  { SDL_FPoint{         H_WIDTH, H_HEIGHT-Q_HEIGHT }, SDL_Color{   0,   0, 255, 255}, SDL_FPoint{0}, },
 };
 
 
